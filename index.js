@@ -26,9 +26,9 @@ mongoose
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 
-app.use(express.static(path.join(__dirname,'../public/build')));
+app.use(express.static(path.join(__dirname,'./build')));
 app.get('*',function(req,res){
-  res.sendFile(path.join(__dirname,'../public/build/index.html'));
+  res.sendFile(path.join(__dirname,'./build/index.html'));
 });
 
 const server = app.listen(process.env.PORT, () =>
@@ -36,7 +36,7 @@ const server = app.listen(process.env.PORT, () =>
 );
 const io = socket(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://chatportapp.onrender.com",
     credentials: true,
   },
 });
