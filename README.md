@@ -21,7 +21,7 @@ ChatPort is a real-time chat application built with modern web technologies. The
 
 \`\`\`
 .
-│   index.js                   # Entry point of the application
+│   index.js                    # Entry point of the application
 │   package-lock.json           # Auto-generated file for npm dependencies
 │   package.json                # Lists project dependencies and scripts
 │   
